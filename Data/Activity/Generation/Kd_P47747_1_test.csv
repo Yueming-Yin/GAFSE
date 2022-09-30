@@ -1,0 +1,2 @@
+,smiles,value,cano_smiles,matched_smiles,matched_cano_smiles,matched_value
+32,CC(CC(=O)NC(=NCCCC1=NC=NN1)N)C2=CC=CC=C2,-2.6799999162292205,CC(CC(=O)NC(N)=NCCCc1ncn[nH]1)c1ccccc1,CC(CC(=O)NC(=NCCCC1=NC=CN1)N)C2=CC=CC=C2,CC(CC(=O)NC(N)=NCCCc1ncc[nH]1)c1ccccc1,-4.1
