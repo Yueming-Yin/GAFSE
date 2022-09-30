@@ -60,4 +60,4 @@ In your jupyter notebook, re-run the notebook of "GAFSE-MO/AID_1706/G_AFSE_AID_1
 ```
 ./GAFSE-MO/AID_1706/G_AFSE_AID_1706.ipynb
 ```
-For a quick view of the results, please check "GAFSE-MO/AID_1706/AID_1706_datatable_copy_generated_molecules.xlsx"
+For a quick view of the results, please check "GAFSE-MO/AID_1706/AID_1706_datatable_copy_generated_molecules.csv"
