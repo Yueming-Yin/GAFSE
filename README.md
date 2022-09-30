@@ -46,11 +46,11 @@ To test trained models, please re-run the corresponding notebook of "GAFSE-MO/G_
 ```
 
 ## Reproduce GAFSE-MO on Molecular Property
-In your jupyter notebook, re-run the corresponding notebook of "GAFSE-MO/G_ADMET_{M,T}_{C}_{Task name}/G_ADMET_M,T_C_{Task name}.ipynb" to reproduce the training process of GAFSE-MO on molecular property. For example:
+In your jupyter notebook, re-run the corresponding notebook of "GAFSE-MO/G_ADMET_M,T_C_{Task name}/G_ADMET_M,T_C_{Task name}.ipynb" to reproduce the training process of GAFSE-MO on molecular property. For example:
 ```
 ./GAFSE-MO/G_ADMET_M_C_CYP1A2_inhibitor/G_ADMET_M_C_CYP1A2_inhibitor.ipynb
 ```
-To test trained models, please re-run the corresponding notebook of "GAFSE-MO/G_ADMET_{M,T}_{C}_{Task name}/G_ADMET_M,T_C_{Task name}-Test.ipynb". For example:
+To test trained models, please re-run the corresponding notebook of "GAFSE-MO/G_ADMET_M,T_C_{Task name}/G_ADMET_M,T_C_{Task name}-Test.ipynb". For example:
 ```
 ./GAFSE-MO/G_ADMET_M_C_CYP1A2_inhibitor/G_ADMET_M_C_CYP1A2_inhibitor-Test.ipynb
 ```
