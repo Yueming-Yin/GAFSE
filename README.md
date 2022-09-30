@@ -50,7 +50,7 @@ In your jupyter notebook, re-run the corresponding notebook of "GAFSE-MO/G_ADMET
 ```
 ./GAFSE-MO/G_ADMET_M_C_CYP1A2_inhibitor/G_ADMET_M_C_CYP1A2_inhibitor.ipynb
 ```
-To test trained models, please re-run the corresponding notebook of "GAFSE-MO/G_ADMET_{M,T}_{C}_{Task name}/G_ADMET_{M,T}_{C}_{Task name}-Test.ipynb". For example:
+To test trained models, please re-run the corresponding notebook of "GAFSE-MO/G_ADMET_{M,T}_{C}_{Task name}/G_ADMET_{M,T}__{C}_{Task name}-Test.ipynb". For example:
 ```
 ./GAFSE-MO/G_ADMET_M_C_CYP1A2_inhibitor/G_ADMET_M_C_CYP1A2_inhibitor-Test.ipynb
 ```
