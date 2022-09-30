@@ -54,3 +54,9 @@ To test trained models, please re-run the corresponding notebook of "GAFSE-MO/G_
 ```
 ./GAFSE-MO/G_ADMET_M_C_CYP1A2_inhibitor/G_ADMET_M_C_CYP1A2_inhibitor-Test.ipynb
 ```
+
+## Reproduce GAFSE-MO on COVID-19
+In your jupyter notebook, re-run the notebook of "GAFSE-MO/AID_1706/G_AFSE_AID_1706.ipynb" to reproduce the training process of GAFSE-MO on the COVID-19-related database:
+```
+./GAFSE-MO/AID_1706/G_AFSE_AID_1706.ipynb
+```
