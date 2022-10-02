@@ -63,5 +63,9 @@ In your jupyter notebook, re-run the notebook of "GAFSE-MO/AID_1706/G_AFSE_AID_1
 For a quick view of the results, please check "GAFSE-MO/AID_1706/AID_1706_datatable_copy_generated_molecules.csv"
 
 # Tips
-- The AFSE imported "from AttentiveFP.AttentiveLayers_Sim_copy" of GAFSE-MP is different from GAFSE-HS.
+- Under the "Data" and "Module" folders are organized data and modules for review. For convenience, these data and modules are distributed to the "AttentiveFP" and "data" folders in subfolders.
+- The "GRN" and "AFSE" classes imported "from AttentiveFP.AttentiveLayers_Sim_copy" are the most critical modules in this project.
+- The "perturb_feature" and "modify_atoms" functions are the most critical functions in this project.
+- The "AFSE" imported "from AttentiveFP.AttentiveLayers_Sim_copy" of GAFSE-MP is different from GAFSE-HS.
 - The number of epochs for stopping "patience=30" is more suitable for GAFSE-MO, because too much training is not conducive to the optimization of molecules.
+- If you encounter any problems reproducing our experiments, please contact me via 1018010514@njupt.edu.cn (or yinym96@qq.com).
