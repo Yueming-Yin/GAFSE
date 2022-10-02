@@ -63,7 +63,7 @@ In your jupyter notebook, re-run the notebook of "GAFSE-MO/AID_1706/G_AFSE_AID_1
 For a quick view of the results, please check "GAFSE-MO/AID_1706/AID_1706_datatable_copy_generated_molecules.csv"
 
 # Tips
-- Under the "Data" and "Module" folders are organized data and modules for review. For convenience, these data and modules are distributed to the "AttentiveFP" and "data" folders in subfolders.
+- Under the "Data" and "Module" folders are organized data and modules for review. For the convenience of operation, these data and modules are distributed to the "AttentiveFP" and "data" folders in subfolders.
 - The "GRN" and "AFSE" classes imported "from AttentiveFP.AttentiveLayers_Sim_copy" are the most critical modules in this project.
 - The "perturb_feature" and "modify_atoms" functions are the most critical functions in this project.
 - The "AFSE" imported "from AttentiveFP.AttentiveLayers_Sim_copy" of GAFSE-MP is different from GAFSE-HS.
