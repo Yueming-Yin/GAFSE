@@ -64,6 +64,7 @@ For a quick view of the results, please check "GAFSE-MO/AID_1706/AID_1706_datata
 
 # Tips
 - Under the "Data" and "Module" folders are organized data and modules for review. For the convenience of operation, these data and modules are distributed to the "AttentiveFP" and "data" folders in subfolders.
+- Some code may need to create an empty "result" folder in the current directory to store the run results.
 - The "GRN" and "AFSE" classes imported "from AttentiveFP.AttentiveLayers_Sim_copy" are the most critical modules in this project.
 - The "perturb_feature" and "modify_atoms" functions are the most critical functions in this project.
 - The "AFSE" imported "from AttentiveFP.AttentiveLayers_Sim_copy" of GAFSE-MP is different from GAFSE-HS.
