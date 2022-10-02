@@ -64,4 +64,4 @@ For a quick view of the results, please check "GAFSE-MO/AID_1706/AID_1706_datata
 
 # Tips
 - The AFSE imported "from AttentiveFP.AttentiveLayers_Sim_copy" of GAFSE-MP is different from GAFSE-HS.
-- The number of epochs for stopping "patience=30" is more suitable for GAFSE-MO, because too much training is not conducive to the optimization of the molecule.
+- The number of epochs for stopping "patience=30" is more suitable for GAFSE-MO, because too much training is not conducive to the optimization of molecules.
