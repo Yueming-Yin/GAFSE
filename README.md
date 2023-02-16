@@ -1,5 +1,5 @@
 # GAFSE
-Reproducing of the paper entitled "An open unified deep graph learning framework for discovering drug leads" (Nature Machine Intelligence, Submitted, IF: 25.898)
+Reproducing of the paper entitled "**[An open unified deep graph learning framework for discovering drug leads](https://arxiv.org/abs/2301.03424v1)**"
 
 - All rights reserved by Yueming Yin, Email: 1018010514@njupt.edu.cn (or yinym96@qq.com).
 
