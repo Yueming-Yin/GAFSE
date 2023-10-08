@@ -89,62 +89,8 @@ def normalize_weight(x, cut=0, expend=False, numpy=False):
     if numpy:
         x = variable_to_numpy(x)
     return x.detach()
-
-
-# class AFSE(nn.Module):
-#     def __init__(self, fingerprint_dim, output_units_num, p_dropout):
-#         super(AFSE, self).__init__()
-#         self.dropout = nn.Dropout(p=p_dropout)
-#         self.metric = nn.Linear(2*fingerprint_dim, fingerprint_dim)
-#         self.output = nn.Linear(fingerprint_dim, output_units_num)
-#         self.fingerprint_dim = fingerprint_dim
-# #         self.BN = nn.BatchNorm1d(fingerprint_dim)
-        
-#     def forward(self,feature=None, d=0, output_lr=False, sigmoid=False):
-# #         feature = self.BN(feature)
-#         unit_vector = torch.ones(self.fingerprint_dim).cuda()
-#         zero_vector = torch.zeros(self.fingerprint_dim).cuda()
-#         aW1 = self.output(self.dropout(self.metric(self.dropout(torch.cat((unit_vector, zero_vector),-1)))))
-#         aW2 = self.output(self.dropout(self.metric(self.dropout(torch.cat((zero_vector, unit_vector),-1)))))
-#         beta_AFSE = torch.norm(24*aW2**2/(aW1+aW2))**2
-#         beta_MSE = torch.norm(2*(aW1**2+aW2**2))**2
-#         conv_lr = 1/(beta_AFSE+beta_MSE+1e-9)
-#         mol_prediction = self.output(self.dropout(self.metric(self.dropout(torch.cat((feature, feature+d),-1)))))
-#         if sigmoid:
-#             mol_prediction = torch.sigmoid(mol_prediction)
-#         if output_lr:
-#             return mol_prediction, conv_lr
-#         return mol_prediction
     
-    
-# class AFSE(nn.Module):
-#     def __init__(self, fingerprint_dim, output_units_num, p_dropout):
-#         super(AFSE, self).__init__()
-#         self.dropout = nn.Dropout(p=p_dropout)
-#         self.metric = nn.Linear(2*fingerprint_dim, fingerprint_dim)
-#         self.hidden = nn.Linear(fingerprint_dim, int(fingerprint_dim/1))
-#         self.output = nn.Linear(int(fingerprint_dim/1), output_units_num)
-#         self.fingerprint_dim = fingerprint_dim
-# #         self.BN = nn.BatchNorm1d(fingerprint_dim)
-        
-#     def forward(self,feature=None, d=0, output_lr=False, sigmoid=False):
-# #         feature = self.BN(feature)
-#         unit_vector = torch.ones(self.fingerprint_dim).cuda()
-#         zero_vector = torch.zeros(self.fingerprint_dim).cuda()
-#         aW1 = self.output(self.dropout(self.hidden(self.dropout(self.metric(self.dropout(torch.cat((unit_vector, zero_vector),-1)))))))
-#         aW2 = self.output(self.dropout(self.hidden(self.dropout(self.metric(self.dropout(torch.cat((zero_vector, unit_vector),-1)))))))
-#         beta_AFSE = torch.norm(24*aW2**2/(aW1+aW2))**2
-#         beta_MSE = torch.norm(2*(aW1**2+aW2**2))**2
-#         conv_lr = 1/(beta_AFSE+beta_MSE+1e-9)
-#         mol_prediction = self.output(self.dropout(self.hidden(self.dropout(self.metric(self.dropout(torch.cat((feature, feature+d),-1)))))))
-#         if sigmoid:
-#             mol_prediction = torch.sigmoid(mol_prediction)
-#         if output_lr:
-#             return mol_prediction, conv_lr
-#         return mol_prediction
-
-    
-class AFSE(nn.Module):
+class AFSE(nn.Module): # the original AFSE module
     def __init__(self, fingerprint_dim, output_units_num, p_dropout):
         super(AFSE, self).__init__()
         self.dropout = nn.Dropout(p=p_dropout)
@@ -181,7 +127,7 @@ class AFSE(nn.Module):
    
 
     
-class Fingerprint_MutiTask(nn.Module):
+class Fingerprint_MutiTask(nn.Module): # A multi-task version of Attentive FP modules for molecular property prediction
 
     def __init__(self, radius, T, input_feature_dim, input_bond_dim,\
             fingerprint_dim, output_units_num, p_dropout, task_num):
@@ -452,7 +398,7 @@ class Fingerprint(nn.Module):
         return activated_features_mol
 
     
-class GRN(nn.Module):
+class GRN(nn.Module): # The GRN module proposed in GAFSE
 
     def __init__(self, radius, T, output_atom_dim, output_bond_dim, fingerprint_dim, p_dropout):
         super(GRN, self).__init__()
@@ -619,7 +565,7 @@ class GRN(nn.Module):
         return activate_atom_list, activate_bond_list
     
     
-class Fingerprint_viz(nn.Module):
+class Fingerprint_viz(nn.Module): # For visualization only
 
     def __init__(self, radius, T, input_feature_dim, input_bond_dim,\
             fingerprint_dim, output_units_num, p_dropout):
