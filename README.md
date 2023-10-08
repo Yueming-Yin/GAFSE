@@ -18,7 +18,7 @@ Reproducing of the paper entitled "**[An open unified deep graph learning framew
 For a quick installation, please enter the following command in your terminal:
 ```
 cd GAFSE
-conda create --name GAFSE --file requirements.txt
+conda create --name GAFSE --file ./requirements.txt
 conda activate GAFSE
 jupyter notebook
 ```
