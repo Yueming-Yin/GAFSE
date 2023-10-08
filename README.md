@@ -14,6 +14,15 @@ Reproducing of the paper entitled "**[An open unified deep graph learning framew
 - Matplotlib
 - Scikit-learn
 
+# Installation
+For a quick installation, please enter the following command in your terminal:
+```
+cd GAFSE
+conda create --name GAFSE --file requirements.txt
+conda activate GAFSE
+jupyter notebook
+```
+
 # Reproduction on GAFSE-HS (Hit screening)
 In your jupyter notebook, re-run the corresponding notebook of "GAFSE-HS/GAFSE-HS/1_GAFSE_{Task ID}.ipynb" to reproduce the training process of GAFSE-HS. For example:
 ```
